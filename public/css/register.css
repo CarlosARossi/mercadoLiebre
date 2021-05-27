@@ -1,0 +1,138 @@
+.paletaColores{
+    color:#EAC926;/* Amarillo */
+    color:#03264C;/* Azul */
+    color:#1259c3;/* Celeste */
+    color:#666;/* Gris oscuro */
+    color:#ebebeb;/* Gris claro */
+    color:#39b54a;/* Verde */
+
+    font-family: 'Roboto', sans-serif;
+
+}
+
+/*********************** GENERAL ***********************/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color:#ebebeb;
+    padding-top: 26vh;
+   }
+
+   /*********************************************** MOBILE ***********************************************/
+
+/*********************** FORM ***********************/
+
+.formRegister{
+    padding: 20px 15px;
+    max-width: 450px;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgb(100 100 100);
+}
+
+.controlForm {
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+
+legend{
+    font-weight: bolder;
+}
+
+.controlRegister {
+    width: 100%;
+    padding: 8px 8px;
+    border: solid 0.5px #03264C;
+    border-radius: 5px
+}
+
+input[type=date] {
+    background-color: white;
+}
+
+.checkCategoryForm{
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+
+.checkCategory{
+    margin: 3px 16px;
+}
+
+.radioProfileForm{
+    display: flex;
+    flex-direction: row;
+    border: none;
+    justify-content: space-around;
+}
+
+.radioProfile{
+    margin: 5px;
+/*     display: flex;
+    flex-direction: row;
+
+    width: 100px;
+    align-items: baseline;
+    justify-content: space-between; */
+}
+
+.buttonsForm {
+    display: flex;
+    flex-direction: row;;
+    justify-content: space-around;
+    border: none;
+}
+
+.button{
+    background-color: #1259c3;
+    font-size: 20px;
+    color:white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid #1259c3;
+  }
+
+
+/* [type='label'] {
+    display: block;
+    padding-left: 15px;
+    text-indent: -15px;
+}
+
+[type="checkbox"]
+{
+    vertical-align:middle;
+} */
+
+/* .button-form {
+    background-color: #39b54a;
+    border: none;
+    font-size: 20px;
+    color:white;
+    padding: 5px 10px;
+    border-radius: 5px;
+
+} */
+
+
+/*********************************************** TABLET ***********************************************/
+
+@media (min-width: 768px){
+
+    body{
+        padding-top: 21vh;
+    }
+ 
+}

@@ -1,0 +1,349 @@
+.paletaColores{
+    color:#EAC926;/* Amarillo */
+    color:#03264C;/* Azul */
+    color:#1259c3;/* Celeste */
+    color:#666;/* Gris oscuro */
+    color:#ebebeb;/* Gris claro */
+    color:#39b54a;/* Verde */
+
+    font-family: 'Roboto', sans-serif;
+
+}
+
+/*********************** GENERAL ***********************/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+    padding-top: 21vh;
+   }
+
+p {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 24px;
+    margin: 10px;
+}
+
+
+
+/*********************************************** MOBILE ***********************************************/
+
+/*********************** HEADER ***********************/
+
+header{
+    background-color: #EAC926;
+    padding: 5px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100vw;
+}
+
+.main-header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-around;
+}
+
+.logo{
+    padding: 10px;
+    width: 40vw;
+    
+}
+
+.search { 
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    color:#666;
+    width: 55vw;
+    margin: 5px;
+}
+
+.searchBar{
+    border: none;
+    padding:5px 10px;
+    width: 75%;
+}
+
+input:focus {
+    outline: none;
+  }
+
+.quota {
+    padding: 10px;
+    text-align: center;
+    font-size: 1em;
+    width: 100vw;
+    font-weight: 500;
+}
+
+
+/*********************** NAV ***********************/
+.main-nav{
+    display: none;
+}
+
+.main-nav ul{
+    list-style: none;
+}
+
+.main-nav a:hover{
+    color: white;
+}
+
+.main-nav a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+}
+
+
+.burger-menu {
+    background-color:  #03264C;
+    color: white;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.5em; 
+    margin: auto;
+    margin-bottom: 10px;
+
+}
+
+/*********************** MAIN ***********************/
+
+.banner{
+    width: 100vw;
+}
+
+main {
+    background-color: #ebebeb;
+}
+
+
+.article{
+    background-color: white;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10px;
+    max-width: 306px;
+}
+
+.article:hover{
+    box-shadow: 0px 0px 10px rgb(100 100 100);
+    transition: all 0.25s;
+}
+
+.article:hover .description{
+        visibility: visible;
+        font-size: 16px;
+        margin-left: 10px;
+        transition: all 0.25s;
+}
+
+.box-article{
+    display: flex;
+    align-items: flex-start;
+    border-top: solid 1px #ebebeb;
+    padding: 10px;
+    position: relative;
+}
+
+.price {
+    font-size: 18px;
+    flex: 1 1 30%;
+    align-self: baseline;
+    text-align: center;
+    font-weight: bold;
+}
+
+.discount {
+    text-transform: lowercase;
+    font-size: 16px;
+    color:#39b54a;
+    flex: 1 1 70%;
+    align-self: baseline;
+    padding: 5px
+}
+
+.description {
+    visibility: hidden;
+}
+
+.image{
+    width: 100%;
+}
+
+.truck{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#39b54a;
+    height: 40px;
+    width: 40px;
+    border: solid 1px #39b54a;
+    border-radius:100%;
+    order: 1;
+    position: absolute;
+    right: 10px;
+    top: -20px;
+    background: white;
+}
+
+.truck:hover{
+    animation: camioncito 1s linear 1 normal;
+}
+
+@keyframes camioncito {
+    0% { 
+        transform: translateX(-10px);
+        opacity: 0%;
+        border: dotted 1px #39b54a; 
+    }
+    100% { 
+        opacity: 100%;
+        border: solid 1px #39b54a;
+     }
+}
+
+/*********************** FOOTER ***********************/
+
+footer{
+    background-color: white;
+    text-align: center;
+    margin: 10px;
+}
+
+#copyright{
+    text-align: left;
+}
+
+#iconFooter{
+    color: #1259c3;
+    font-size: 2em; 
+    margin-top: 10px;
+}
+
+#iconFooter:hover{
+    color: #03264C;
+}
+
+/*********************************************** TABLET ***********************************************/
+@media (min-width: 768px){
+
+    body{
+        padding-top: 11vh;
+    }
+ 
+    /*********************** HEADER TABLET ***********************/    
+    .main-header{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+
+    .logo{
+        width: 25vw;
+    }
+
+    .search{
+        width: 50vw;
+    }
+    
+    .quota{
+        width: 25vw;
+        text-align: right;
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
+    /*********************** NAV TABLET ***********************/
+    .main-nav{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-nav ul{
+        display: flex;
+    }
+    
+    .main-nav li{
+        display: flex;
+        margin: 0 5px;
+    }
+
+    /*********************** MAIN TABLET ***********************/
+  
+    .article{
+        margin-inline: 4vw;
+        max-width: 40vw;
+    }
+    
+    .visit{    
+        display: flex;
+        flex-wrap: wrap;
+        /* flex-direction: row; */
+        /* margin: auto; */
+        justify-content: space-between;
+        align-content: space-between;
+    }
+    
+    .offer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: space-between;
+    }
+
+}
+
+/*********************************************** DESKTOP ***********************************************/
+@media (min-width: 1021px){
+    
+    /*********************** HEADER DESKTOP ***********************/
+ 
+
+
+    /*********************** NAV DESKTOP ***********************/
+
+
+
+    /*********************** MAIN DESKTOP ***********************/
+    .article{
+        margin-inline: 1vw;
+        max-width: 22vw;
+    }
+
+    /*********************** FOOTER DESKTOP ***********************/
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .sectionFooter{
+        width: 30VW;
+    }
+
+}
