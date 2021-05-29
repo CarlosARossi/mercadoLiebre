@@ -78,12 +78,6 @@ input[type=date] {
 
 .radioProfile{
     margin: 5px;
-/*     display: flex;
-    flex-direction: row;
-
-    width: 100px;
-    align-items: baseline;
-    justify-content: space-between; */
 }
 
 .buttonsForm {
@@ -101,32 +95,11 @@ input[type=date] {
     border-radius: 5px;
 }
 
-input:focus {
+.controlForm > input:focus {
     outline: none;
     border: 2px solid #1259c3;
   }
 
-
-/* [type='label'] {
-    display: block;
-    padding-left: 15px;
-    text-indent: -15px;
-}
-
-[type="checkbox"]
-{
-    vertical-align:middle;
-} */
-
-/* .button-form {
-    background-color: #39b54a;
-    border: none;
-    font-size: 20px;
-    color:white;
-    padding: 5px 10px;
-    border-radius: 5px;
-
-} */
 
 
 /*********************************************** TABLET ***********************************************/

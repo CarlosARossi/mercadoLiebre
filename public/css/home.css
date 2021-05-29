@@ -80,7 +80,7 @@ header{
     width: 75%;
 }
 
-input:focus {
+.search > input:focus {
     outline: none;
   }
 
