@@ -56,7 +56,7 @@
 
         <!---------------------------------------- MAIN / FORM ---------------------------------------->
     <main>    
-        <form action="/user-register" method="POST" enctype="multipart/form-data"  class="formRegister">
+        <form action="/" method="GET" enctype="multipart/form-data"  class="formRegister">
 
             <fieldset class="controlForm">
                 <legend>Nombre y apellido</legend>
@@ -65,27 +65,27 @@
 
             <fieldset class="controlForm">
                 <legend>Nombre de usuari@</legend>
-                <input type="text" name="user" placeholder="Charly91" class="controlRegister">
+                <input type="text" name="user" placeholder="Charly91" class="controlRegister" required minlength="6" maxlength="8">
             </fieldset>
 
             <fieldset class="controlForm">
                 <legend>Fecha de nacimiento</legend>
-                <input type="date" name="fecha" min="1991-05-30" max="2022-12-31" placeholder="dd/mm/yyyy" class="controlRegister">
+                <input type="date" name="fecha" min="1991-05-30" max="2022-12-31" placeholder="dd/mm/yyyy" class="controlRegister" required>
             </fieldset>
 
             <fieldset class="controlForm">
                 <legend>Domicilio</legend>
-                <input type="text" name="direction" placeholder="Calle Falsa 123" class="controlRegister">
+                <input type="text" name="direction" placeholder="Calle Falsa 123" class="controlRegister" required>
             </fieldset>
 
             <fieldset class="radioProfileForm">
                 <legend>Perfil de usuario</legend>
                 <div class="radioProfile">
-                    <input checked type="radio" name="name" id="vendedor" value="v">
+                    <input checked type="radio" required name="name" id="vendedor" value="v">
                     <label>Vendedor</label>
                 </div>
                 <div class="radioProfile">
-                    <input type="radio" name="name" id="comprador" value="c">
+                    <input type="radio" required name="name" id="comprador" value="c">
                     <label>Comprador</label>
                 </div>
             </fieldset>
@@ -131,12 +131,12 @@
 
             <fieldset class="controlForm">
                 <legend>Contraseña</legend>
-                <input type="password" name="clave" class="controlRegister">
+                <input type="password" name="clave" class="controlRegister" required minlength="4" maxlength="8">
             </fieldset>
 
             <fieldset class="controlForm">
                 <legend>Confirmar contraseña</legend>
-                <input type="password" name="clave" class="controlRegister">
+                <input type="password" name="clave" class="controlRegister" required minlength="4" maxlength="8">
             </fieldset>
 
             <fieldset class="buttonsForm">
